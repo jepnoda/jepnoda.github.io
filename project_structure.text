@@ -1,0 +1,63 @@
+- .astro
+  - icon.d.ts
+  - settings.json
+- .github
+  - workflows
+    - deploy.yml
+- .gitignore
+- astro.config.mjs
+- package-lock.json
+- package.json
+- public
+  - about.txt
+  - android-chrome-192x192.png
+  - android-chrome-512x512.png
+  - apple-touch-icon.png
+  - banner.png
+  - eco.jpg
+  - favicon-16x16.png
+  - favicon-32x32.png
+  - favicon.ico
+  - favicon.svg
+  - robot.txt
+  - site.webmanifest
+- README.md
+- src
+  - assets
+    - icons
+      - arduino.svg
+      - astrojs.svg
+      - bash.svg
+      - bootstrap.svg
+      - c.svg
+      - cpp.svg
+      - express-js.svg
+      - java.svg
+      - javascript.svg
+      - linux.svg
+      - logo.svg
+      - logo_1.svg
+      - node-js.svg
+      - nodejs.svg
+      - powershell.svg
+      - react-2.svg
+      - react.svg
+      - tailwind-css.svg
+    - me_holding_a_cat_square.jpg
+    - my_picture.jpg
+  - components
+    - Footer.astro
+    - NavBar.astro
+    - ProjectCard.astro
+    - projects.ts
+    - TechBadge.astro
+    - techs.ts
+  - env.d.ts
+  - layouts
+    - AboutLayout.astro
+    - MainLayout.astro
+  - pages
+    - about.md
+    - index.astro
+- tailwind.config.mjs
+- tsconfig.json
