@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon/components'
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="flex flex-col items-center justify-center gap-y-4 pb-8">
+  <div class="flex flex-row gap-x-2">
+    <a
+      href="https://github.com/jepnoda"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition ease-in-out hover:text-primary duration-300"
+    >
+      <Icon name="mdi:github" class="w-[24px] h-[24px]" />
+    </a>
+    <a
+      href="mailto:nodajeperson3@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition ease-in-out hover:text-primary duration-300"
+    >
+      <Icon name="mdi:email" class="w-[24px] h-[24px]" />
+    </a>
+  </div>
+  <p class="font-mono text-xs flex flex-row gap-2 items-center">
+    MADE WITH <Icon name="mdi:heart-outline" /> BY JEPERSON NODA
+  </p>
+</footer>

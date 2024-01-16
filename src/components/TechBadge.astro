@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon/components'
+const { name, src } = Astro.props
+---
+
+<a
+  class="flex items-center gap-x-2 lg:gap-x-4 transition ease-in-out hover:scale-110 duration-300"
+>
+  <div class="flex justify-center items-center rounded-full bg-base-200 p-4">
+    <Icon name={src} class="w-[32px] h-[32px]" />
+  </div>
+  <h1>{name}</h1>
+</a>

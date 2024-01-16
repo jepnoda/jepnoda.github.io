@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets'
+import MainLayout from './MainLayout.astro'
+import myPictureWithCat from '../assets/me_holding_a_cat_square.jpg'
+const { frontmatter } = Astro.props
+---
+
+<MainLayout title={frontmatter.title} description={frontmatter.description}>
+  <div class="container lg:max-w-3xl">
+    <div class="flex flex-col items-center justify-center">
+      <div class="max-w-prose flex flex-col items-center">
+        <Image
+          src={myPictureWithCat}
+          alt="Me, holding a cat."
+          class="w-[128px] h-[128px] rounded-full ring ring-primary lg:w-[256px] lg:h-[256px] mb-4"
+        />
+        <h1 class="text-3xl font-bold">{frontmatter.title}</h1>
+        <h2 class="font-medium mb-4">{frontmatter.description}</h2>
+      </div>
+      <article class="prose">
+        <slot />
+      </article>
+    </div>
+    <div class="divider"></div>
+  </div>
+</MainLayout>

@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import MainLayout from '../layouts/MainLayout.astro'
+import myPicture from '../assets/my_picture.jpg'
+import { technologies } from '../components/techs'
+import TechBadge from '../components/TechBadge.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+import { projects } from '../components/projects'
+---
+
+<MainLayout
+  title="Jeperson Noda"
+  description="Jeperson is a Software Engineer based in Metro Manila, Philippines."
+>
+  <div class="container lg:max-w-3xl">
+    <div
+      class="flex flex-col-reverse justify-center items-center gap-y-4 lg:flex-row lg:gap-x-8 mb-8"
+    >
+      <div class="flex flex-col">
+        <h1 class="text-3xl font-bold mb-1 text-center lg:text-left">
+          Jeperson Noda
+        </h1>
+        <h2 class="lg:text-lg font-medium mb-4 text-center lg:text-left">
+          Software Engineer👨🏻‍💻
+        </h2>
+        <p class="mb-4">
+          Hey there! I'm <strong class="font-medium">Jeperson</strong>, an
+          Information Technology student at Colegio De Sta Teresa De Avila Inc.
+          (CSTA) in Quezon City, Philippines. I am fascinated by the world of <strong
+            class="font-medium">Web Development</strong
+          > and captivated by the possibilities of the <strong
+            class="font-medium">Internet of Things (IoT).</strong
+          >
+        </p>
+        <a
+          href="mailto:nodajeperson3@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link link-hover font-medium text-primary flex flex-row items-center gap-2"
+        >
+          <Icon name="mdi:arrow-right" />
+           Work With Me!
+        </a>
+      </div>
+      <Image
+        src={myPicture}
+        alt="My Picture"
+        class="w-[128px] h-[128px] rounded-full ring ring-primary lg:w-[256px] lg:h-[256px]"
+      />
+    </div>
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Tech Stack</h1>
+      <p class="mb-4">
+        Embracing both Web Development and IoT, my tech arsenal is in a constant
+        state of growth. I thrive on exploring and adopting new programming
+        languages, frameworks, and tools.
+      </p>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-x-4 lg:gap-y-8">
+        {technologies.map((tech) => <TechBadge {...tech} />)}
+      </div>
+    </div>
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Projects</h1>
+      <p class="mb-8">
+        Explore my portfolio showcasing a series of dynamic projects spanning
+        web development and IoT. Each project represents a fusion of creativity
+        and technical expertise, designed to innovate, solve real-world
+        challenges, and explore the endless possibilities within the digital
+        landscape.
+      </p>
+      <div class="flex flex-col gap-y-12">
+        {projects.map((project) => <ProjectCard {...project} />)}
+      </div>
+    </div>
+    <div class="divider"></div>
+  </div>
+</MainLayout>
