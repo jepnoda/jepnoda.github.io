@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: 'Personal Website',
+    description: '🚀My Personal website built with Astro.',
+    keywords: ['AstroJS', 'TailwindCSS', 'DaisyUI'],
+    repository: 'https://github.com/jepnoda/jepnoda.github.io',
+    cover: '/sc.png',
+  },
+  {
     name: 'ESP Smart Energy Meter',
     description:
       '⚡A Smart Power Monitoring device built with the ESP32 Development Board, the PZEM-004T V3 Module, and the ESPHome Custom Firmware to monitor various electrical parameters.',

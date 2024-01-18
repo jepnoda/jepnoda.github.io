@@ -22,7 +22,7 @@ import { projects } from '../components/projects'
           Jeperson Noda
         </h1>
         <h2 class="lg:text-lg font-medium mb-4 text-center lg:text-left">
-          Software Engineer👨🏻‍💻
+          Software Engineer 👨🏻‍💻
         </h2>
         <p class="mb-4">
           Hey there! I'm <strong class="font-medium">Jeperson</strong>, an
@@ -37,11 +37,19 @@ import { projects } from '../components/projects'
           href="mailto:nodajeperson3@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          class="btn btn-primary self-center lg:self-start pl-6 pr-5 text-xs font-normal"
+        >
+          Work With Me! 🫰🏻
+        </a>
+        <!-- <a
+          href="mailto:nodajeperson3@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           class="link link-hover font-medium text-primary flex flex-row items-center gap-2"
         >
           <Icon name="mdi:arrow-right" />
            Work With Me!
-        </a>
+        </a> -->
       </div>
       <Image
         src={myPicture}
@@ -69,7 +77,7 @@ import { projects } from '../components/projects'
         challenges, and explore the endless possibilities within the digital
         landscape.
       </p>
-      <div class="flex flex-col gap-y-12">
+      <div class="flex flex-col gap-y-12 items-center justify-center">
         {projects.map((project) => <ProjectCard {...project} />)}
       </div>
     </div>
