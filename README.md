@@ -2,7 +2,7 @@
 
 My minimal personal website built with [Astro.](https://astro.build/)
 
-![screenshot](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+![screenshot](https://raw.githubusercontent.com/jepnoda/jepnoda.github.io/main/public/sc.png)
 
 ## 🛠️ What I used
 
